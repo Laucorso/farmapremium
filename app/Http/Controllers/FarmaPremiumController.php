@@ -11,7 +11,7 @@ use OpenApi\Annotations as OA;
 
 /**
  * @OA\Info(
- *     title="FARMAPREMMIUM API",
+ *     title="FARMAPREMIUM API",
  *     version="1.0.0",
  *     description="Farmapremium API",
  *     @OA\Contact(
