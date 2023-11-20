@@ -47,7 +47,6 @@ class CardRepository implements CardRepositoryInterface
                 }
             }
     
-            // Actualizar el saldo total
             $this->updateCardBalance($points,$card, '-');
 
             return true; 
@@ -78,7 +77,6 @@ class CardRepository implements CardRepositoryInterface
             'points' => $points,
         ]);
 
-        // Actualizar el saldo total
         $this->updateCardBalance($points,$card, '+');
         return true;
     }

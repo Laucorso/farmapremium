@@ -20,7 +20,7 @@ class CardService {
 
     public function canjearPoints($client_id, $pharmacy_id, $points){
 
-        if($this->cardRepository->getTotalPoints($client_id)>=$points){
+        if($this->cardRepository->getTotalPoints($client_id) >= $points){
             $result = $this->cardRepository->canjearPoints($pharmacy_id, $points, $client_id);
         }else{
             $result = false;

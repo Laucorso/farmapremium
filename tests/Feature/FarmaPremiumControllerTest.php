@@ -14,7 +14,7 @@ class FarmaPremiumControllerTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_obtainPoints()
+    public function test_obtain_points_function()
     {
 
         $transaction = Transaction::factory()->create();
@@ -29,7 +29,7 @@ class FarmaPremiumControllerTest extends TestCase
 
     }
 
-    public function test_canjearPoints()
+    public function test_canjear_points_function()
     {
 
         $transaction = Transaction::factory()->create();
@@ -55,7 +55,7 @@ class FarmaPremiumControllerTest extends TestCase
         $response->assertJson(['message' => 'Saldo insuficiente para canjear los puntos']);
     }
 
-    public function test_review()
+    public function test_review_function()
     {
 
         $transactions = Transaction::factory(5)->create();
